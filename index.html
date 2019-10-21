@@ -1,0 +1,311 @@
+<html>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+       <style>
+           body{
+               background-color:lightskyblue;
+               margin: 0%;
+               padding: 0%;
+           }
+           .top{
+              height: 85%;
+               width: 38%;
+               background-color: rgba(255, 146, 6, 0.2);
+               position: relative;
+               left: 27%;
+               top: -18%;
+               border-radius: 5%;
+           }
+           .input{
+               position: relative;
+/*              padding-top: 6%;*/
+               left: 2%;
+               height: 9%;
+               width:60%;
+               border: none;
+               border-radius: 10px;
+               padding-left:4%;
+               font-family:sans-serif;
+               font-size: 90%;
+               letter-spacing: 1%;
+               font-weight: 700;
+           }
+           .inside{
+               position: relative;
+               top: 27%;
+               left: 10%; 
+           }
+           #password{
+               margin-top: 7%;
+           }
+           ::placeholder{
+               letter-spacing: 3px;
+           }
+           i{
+               background-color:#F72828 ;
+               height: 9%;
+               width: 10%;
+               text-align: center;
+              position: relative;
+               left:1.8%;
+               top: 11px;
+               border-radius: 5px;
+               color: white;
+             
+           }
+           .checkbox{
+               height: 4%;
+               width: 4%;
+               position: relative;
+               left: 34%;
+               
+           }
+           .below{
+                position: relative;
+               top: -55%;
+/*               right: -400px;*/
+           }
+           #rem{
+               letter-spacing: 1%;
+               font-family: sans-serif;
+               font-weight: 500;
+              position: relative;
+               left: 34%;
+               top: -6px;
+               font-size: 120%;
+           }
+           #btn{
+               position: relative;
+               left: 32%;
+               height: 8.8%;
+               width: 26%;
+               top: -340px;
+               background-color:#F72828;
+               border: none;
+               border-radius: 6px;
+               font-size: 100%;
+               letter-spacing: 2px;
+               color: white;
+               cursor: pointer;
+           }
+           #logo{
+               color:#F72828 ;
+               background-color: #F72828;
+               height: 29%;
+               width: 17%;
+               position: relative;
+               top: -20%;
+               font-size: 1000%;
+               padding-top: 25px;
+               background-color: white;
+               border-radius: 120px;
+               border: 9px solid lightskyblue;
+               left: 37%;
+               z-index: 1;   
+           }
+           .signup{
+               font-size: 100%;
+               font-family: sans-serif;
+               letter-spacing: 1px;
+               font-weight: 300;
+               position: relative;
+               top: -310px;
+               padding-left: 34%;
+           }
+           #acc{
+               color: blue;
+               cursor: pointer;
+           }
+           #forget{
+               color: blue;
+               font-size: 100%;
+               font-family: sans-serif;
+               letter-spacing: 1px;
+               font-weight: 300;
+                position: relative;
+               top: -300;
+               padding-left: 37%;
+           }
+           ::title{
+               height: 50px;
+           }
+           #modal{
+            display: none;
+            background-color: rgba(0,0,0,0.7);
+            position:fixed;
+            height: 100%;
+            width:100%;
+            padding 20px;
+            left: 0px;
+            top: 0px;
+            color: beige;
+            z-index: 2;
+               border-radius: 50px;
+        }
+        
+        #container{
+            background-color: #2D3B61;
+            position: relative;
+            height: 80%;
+            width: 40%;
+            padding: 20px;
+            left: 30%;
+            top: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+           #sign{
+               position: relative;
+               top: -10%;
+               font-size: 550%;
+               background-color: blueviolet;
+               height: 23%;
+               width: 25%;
+               border-radius: 70px;
+               padding-top: 20px;
+               padding-left: 7px;
+               margin-top: -20%;
+               border: 5px solid white;
+           }
+           #close{
+               height: 9%;
+               width: 60%;
+               margin-left: 4%;
+               border-radius: 10px;
+               border: none;
+               background-color: #40D7F5;
+               color: white;
+               letter-spacing: 1px;
+               font-size: 90%;
+               font-family: sans-serif;
+               font-weight: 400;
+               word-spacing: 2px;
+               outline: none;
+           }
+           .input1{
+               background-color: #2D3B61;
+               border:1px solid #2D3B61;
+               border-bottom-color: white;
+               position: relative;
+               padding-top: 5%; 
+               top: -5%;
+               width: 60%;
+               left: 2%;
+               padding-bottom:2%;
+               padding-left: 2%;
+               font-size: 100%;
+               outline: none;
+               color: white;
+               font-family: sans-serif;
+               letter-spacing: 2px;
+               
+           }
+           ::placeholder{
+               color: white;
+
+            
+           }
+           #google{
+               height: 8%;
+               width: 60%;
+              position: relative;
+             padding-top: 8px;  
+               font-size: 240%;
+           }
+        </style> 
+    </head>
+<body>
+    <div class="logo">
+        <i class="fa fa-rebel" aria-hidden="true" id="logo"></i>
+    </div>
+    <div class="top">
+        <div class="inside">
+  <font size="7px"><i class="fa fa-user" aria-hidden="true"></i></font><input type="text" id="username" class="input" placeholder="USERNAME" title="Email address or username"><br>
+           
+<i class="fa fa-lock fa-3x" aria-hidden="true"></i><input type="password" id="password" class="input" placeholder="PASSWORD" title="Shh...dont show to anyone">   
+    </div>
+    </div>
+   <div class="below"><input type="checkbox" class="checkbox" id="check"><span id="rem">Remember me</span></div> 
+    <button id="btn">Login</button>
+     <script>
+            document.getElementById("btn").addEventListener("click", function(){
+                var x = document.getElementById("username").value;
+               
+                if(x ==""){
+                   alert("Username cannot be empty");
+//    document.getElementById("username").style.borderColor:red;
+                   };
+            });
+          document.getElementById("btn").addEventListener("click", function(){
+          
+                var passwd = document.getElementById("password").value;
+              if(passwd==""){
+                  alert("password field cannot be empty");
+              }
+              });
+         document.getElementById("check").addEventListener("click",function(){
+             var p = document.getElementById("password").value;
+             if(p!=""){
+                                  var y = confirm("Are you sure you want to save your password");
+             if(y==true){
+                 alert("Password saved");
+             }
+             }
+              });
+               document.getElementById("btn").addEventListener("click",function(){
+             var p = document.getElementById("password").value;
+                   var u = document.getElementById("username").value
+             if(p!="" && u!=""){
+                document.write('<a href="www.google.com"></a>');
+             }
+              }); 
+              
+     </script>
+    <div class="signup">Don't have any account?<span id="acc"> Sign Up</span></div>
+    <p id="forget">Forget your password?</p>
+    
+     <script>
+        document.getElementById("acc").addEventListener("click", function(){
+            document.getElementById("modal").style.display="block";
+        });
+        </script>
+    
+    <div id="modal">
+            <div id="container">
+               <i class="fa fa-user-plus" aria-hidden="true" id="sign"></i>
+                <input type="text" class="input1" placeholder="Username" id="us" title="Make sure that it is unique"><br>
+                <input type="text" class="input1" placeholder="Password" id="ps" title="Must be greater than 6 digits"><br>
+               
+                <button id="close" onclick="closeDiv()" style="cursor: pointer">CREATE MY ACCOUNT</button><br>
+                <p>OR CONNECT WITH</p>
+                <br>
+               <i class="fa fa-google" aria-hidden="true" id="google"></i>
+                </div>
+        <script>
+          document.getElementById("close").addEventListener("click", function(){
+              var pass = document.getElementById("ps").value;
+              var len = pass.length;
+              console.log(len);
+              if(len>6){
+                 var c = confirm("Are you sure you want to create an account?");
+                  if(c==true){
+                      document.getElementById("modal").style.display="none"; 
+                  }
+                  else{
+                      alert("Recreate your account");
+                  }
+              }
+              else{
+                  alert("Password length should be greater than 6");
+              }
+          });
+        </script>
+            </div>
+       
+      
+    </body>
+    
+</html>
